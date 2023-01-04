@@ -1,0 +1,42 @@
+#root {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+$tagColor: #f92672;
+$tagBracketsColor: grey;
+
+.block {
+  padding-left: 1rem;
+}
+
+.openingNames {
+  color: $tagColor;
+  margin-left: -2rem;
+
+  &:before {
+    content: "<";
+    color: $tagBracketsColor;
+  }
+
+  &:after {
+    content: ">";
+    color: $tagBracketsColor;
+  }
+}
+
+.closingNames {
+  color: $tagColor;
+  margin-left: -2rem;
+
+  &:before {
+    content: "</";
+    color: $tagBracketsColor;
+  }
+
+  &:after {
+    content: ">";
+    color: $tagBracketsColor;
+  }
+}
